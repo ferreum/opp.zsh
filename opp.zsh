@@ -304,10 +304,10 @@ def-oppc-pair () {
   done <<< "$1"
 }
 
-# XXX: 'k' stands for 'bracKet'. (my taste)
+# XXX: 'r' stands for 'bRacket'. (my taste)
 def-oppc-pair '
-  [ ] k
-  < >
+  [ ] r
+  < > a
   ( ) b
   { } B
 '

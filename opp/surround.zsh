@@ -11,15 +11,15 @@
 #
 # Eight punctiation marks with aliased by, (k is my taste)
 #   [ ]  < >  ( )  { }
-#     k         b    B
+#     r  a      b    B
 # When insertion,
 #   [, <, ( and { will add the pairs with one whitespace
 #   ], >, ) and } will add the pairs without whitespaces
-#   k,    b and B will add the pairs without whitespaces
+#   r, a, b and B will add the pairs without whitespaces
 # When deletion,
 #   [, <, ( and { will remove the pairs with stripping any whitespaces
 #   ], >, ) and } will remove the pairs without stripping
-#   k,    b and B will remove the pairs without stripping
+#   r, a, b and B will remove the pairs without stripping
 #
 # and three quate marks.
 #   " ' `
@@ -303,10 +303,10 @@ def-opp-surround-pair () {
   } always { unfunction DAS } <<< "$1"
 }
 
-# XXX: 'k' stands for 'bracKet'. (my taste)
+# XXX: 'r' stands for 'bRacket'. (my taste)
 def-opp-surround-pair '
-  [ ] k
-  < >
+  [ ] r
+  < > a
   ( ) b
   { } B
 '
